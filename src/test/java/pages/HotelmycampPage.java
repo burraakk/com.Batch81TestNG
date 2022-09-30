@@ -25,4 +25,7 @@ public class HotelmycampPage {
     @FindBy (xpath = "//*[@class='dropdown dropdown-user']")
     public WebElement usernameInTheUpperRightCorner;
 
+    @FindBy (xpath = "//*[@class='validation-summary-errors']")
+    public WebElement errorMessage;
+
 }
