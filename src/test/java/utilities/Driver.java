@@ -17,9 +17,9 @@ public class Driver {
         // Default constructor'u devre dısı bırakmak yani SingletonPattern yapmak icin kullanılıyor
     }
 
-    static WebDriver driver;
-    protected static Actions actions;
-    protected static String tarih;
+    public static WebDriver driver;
+    public static Actions actions;
+    public static String tarih;
 
     public static WebDriver getDriver() {
         if (driver == null) {

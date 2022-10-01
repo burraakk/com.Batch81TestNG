@@ -28,4 +28,21 @@ public class HotelmycampPage {
     @FindBy (xpath = "//*[@class='validation-summary-errors']")
     public WebElement errorMessage;
 
+    @FindBy (xpath = "//*[text()='Hotel Management']")
+    public WebElement hotelManagementButton;
+
+    @FindBy (xpath = "//*[@href='/admin/RoomReservationAdmin']")
+    public WebElement roomReservationButton;
+
+    @FindBy (xpath = "//*[@class='hidden-480']")
+    public WebElement addRoomReservationButton;
+
+    @FindBy (xpath = "//*[@id='IDUser']")
+    public WebElement idUserMenu;
+
+    @FindBy (xpath = "//*[@class='bootbox-body']")
+    public WebElement roomReservationText;
+
+    @FindBy (xpath = "//*[@class='btn btn-primary']")
+    public WebElement okButton;
 }
