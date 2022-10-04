@@ -24,9 +24,11 @@ public class HotelmycampPage {
 
     @FindBy (xpath = "//*[@class='dropdown dropdown-user']")
     public WebElement usernameInTheUpperRightCorner;
+    //Başarıyla login yaptığımızda sağ üst köşede çıkan kullanıcı adı (manager)
 
     @FindBy (xpath = "//*[@class='validation-summary-errors']")
     public WebElement errorMessage;
+    //Login işlemi başarısız olduğunda aldığımız mesaj
 
     @FindBy (xpath = "//*[text()='Hotel Management']")
     public WebElement hotelManagementButton;
