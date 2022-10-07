@@ -3,6 +3,8 @@ package tests.day21;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import static utilities.Driver.*;
+
 import utilities.Driver;
 import utilities.ReusableMethods;
 
@@ -12,7 +14,7 @@ public class C02_WindowHandlesReusableMethods {
     @Test
     public void test01() {
         //● https://the-internet.herokuapp.com/windows adresine gidin.
-        Driver.getDriver().get("https://the-internet.herokuapp.com/windows");
+        getDriver().get("https://the-internet.herokuapp.com/windows");
 
         //● Click Here butonuna basın.
         Driver.getDriver().findElement(By.xpath("//*[text()='Click Here']")).click();
@@ -33,6 +35,7 @@ public class C02_WindowHandlesReusableMethods {
         Driver.getDriver().get("https://the-internet.herokuapp.com/windows");
 
         //● Click Here butonuna basın.
+        ReusableMethods.waitFor(2);
         Driver.getDriver().findElement(By.xpath("//*[text()='Click Here']")).click();
 
         // acilan yeni tab'in title'inin "New Window" oldugunu test edin

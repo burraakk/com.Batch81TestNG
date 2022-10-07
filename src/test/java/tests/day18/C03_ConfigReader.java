@@ -7,7 +7,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 
 public class C03_ConfigReader {
-    @Test
+    @Test (groups = "gp2")
     public void positiveLoginTest() {
         // https://www.hotelmycamp.com/ adresine git  login butonuna bas
         Driver.getDriver().get(ConfigReader.getProperty("hotelmycampUrl"));
